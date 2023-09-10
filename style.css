@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#map {
+    height: 100vh;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: fixed;
+    left: 10px;
+    top: 80px;
+    height: 90vh;
+    z-index: 999;
+}
+
+.sidebar {
+    background: rgba(0, 0, 0, 0.61);
+    height: 80vh;
+    width: 0;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.sidebar:hover {
+    background: rgba(0, 0, 0, 0.853);
+}
+
+.sidebar-toggle {
+    font-size: 40px !important;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidebar-variable {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    margin-left: 10px;
+}
+
+.sidebar-comp {
+    display: flex;
+    gap: 26px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.sidebar-comp input {
+    height: 25px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}

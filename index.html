@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>ToDo Map Marker</title>
+  </head>
+  <body>
+    <aside>
+      <div class="sidebar">
+        <form class="sidebar-variable">
+          <div class="sidebar-comp">
+            <label>Title:</label>
+            <input type="text" />
+          </div>
+          <div class="sidebar-comp">
+            <label>Tarih: </label>
+            <input style="width: 22vh" type="date" />
+          </div>
+          <div class="sidebar-comp">
+            <label>Durum</label>
+            <select style="width: 22vh">
+              <option value="">Park Yeri</option>
+              <option value="">Gezilecek Yerler</option>
+              <option value="">Ev</option>
+              <option value="">İş</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <button id="toggleButton" class="material-icons sidebar-toggle">
+        keyboard_double_arrow_right
+      </button>
+    </aside>
+
+    <div id="map"></div>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
